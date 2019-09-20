@@ -11,9 +11,28 @@ body {
     body .row > *:not(.row):not(.column), body .row .row > *:not(.row):not(.column), body .row .column > *:not(.row):not(.column) {
       margin: 10px; }
   body .main-title {
-    text-align: center; }
+    text-align: center;
+    padding: 25px; }
     body .main-title img {
       width: 300px; }
+  body .loading {
+    background: url("https://media.giphy.com/media/RiPtJscZIs2DYFxojM/giphy.gif") no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: fixed; }
+  body .loaded {
+    opacity: 0;
+    background-color: black;
+    transition: opacity 2s;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: fixed; }
+  body .unloaded {
+    display: none; }
   body .square-link {
     width: inherit; }
     body .square-link img {
