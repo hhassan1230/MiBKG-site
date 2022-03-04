@@ -15,13 +15,22 @@ body {
     padding: 25px; }
     body .main-title img {
       width: 300px; }
+  body .mm-animated {
+    background-image: url(/img/MM_CoverArt_Square.png);
+    background-color: #4A89DC;
+    background-size: contain; }
+  body .first-img img {
+    height: calc(100% - 26px) !important; }
+  body .first-img-margin {
+    margin-left: 0 !important; }
   body .loading {
     background: url("https://media.giphy.com/media/RiPtJscZIs2DYFxojM/giphy.gif") no-repeat center center fixed;
     background-size: cover;
     width: 100%;
     height: 100%;
     z-index: 1;
-    position: fixed; }
+    position: fixed;
+    top: 0; }
   body .loaded {
     opacity: 0;
     background-color: black;
@@ -30,7 +39,8 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
-    position: fixed; }
+    position: fixed;
+    top: 0; }
   body .unloaded {
     display: none; }
   body .square-link {
@@ -40,6 +50,10 @@ body {
       height: inherit; }
   body .fit-height {
     height: -webkit-fill-available; }
+  body #all-height {
+    height: 98%; }
+  body .white-square {
+    background: #fff; }
   body .column {
     display: flex;
     flex-direction: column; }
@@ -66,7 +80,7 @@ body {
         color: inherit;
         text-decoration: none; }
       body .wrapper .rotate .front {
-        background: #ED5565;
+        background: black;
         transform: translateZ(calc(var(--height)/2)); }
       body .wrapper .rotate .bottom {
         background: #FFCE54;
@@ -74,11 +88,11 @@ body {
         transform-origin: bottom center;
         animation-delay: -12s; }
       body .wrapper .rotate .back {
-        background: #2ECC71;
+        background: #712DAD;
         transform: translateZ(calc(var(--height)/-2)) rotateX(180deg);
         animation-delay: -8s; }
       body .wrapper .rotate .top {
-        background: #5D9CEC;
+        background: #3F1C0A;
         transform: rotateX(-270deg) translateY(calc(var(--height)/-2));
         transform-origin: top center;
         animation-delay: -4s; }
@@ -108,6 +122,8 @@ body {
             flex-direction: column; }
             body .wrapper .rotate > *.image-banner .text .b {
               font-weight: bold; }
+            body .wrapper .rotate > *.image-banner .text .s {
+              font-size: 10px; }
         body .wrapper .rotate > *.backgroundimage {
           background-size: 200px 200px;
           background-position: center;
